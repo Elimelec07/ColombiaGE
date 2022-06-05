@@ -1,0 +1,206 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: white;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(7, 82, 106);
+}
+.contenedor1{
+    width: 100%;
+    background-color: rgb(18, 142, 142);
+    height: 60px;
+    color: azure;
+    box-shadow: 5px 2px 5px rgba(0,0,0,0.448);
+    position: fixed;
+}
+.imagen{
+    height: 60px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 80px;
+}
+.logo{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 52px;
+    margin-left: 10px;
+    position: fixed;
+    top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 10em;
+    animation: logo 4s infinite;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 8px;
+}
+nav ul li a{
+    color: beige;
+    font-family: 700;
+}
+nav label{
+    float: right;
+}
+nav label i{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 15px;
+    display: none;
+}
+nav label .fa-solid {
+    display: none;
+}
+.desaparecer{
+    display: none;
+}
+.fondo{
+    background-image: url(imagenes/maxresdefault.jpg);
+    border-bottom: solid rgb(0, 0, 0);
+    height: 50% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.parrafo{
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+}
+.titulo{
+    font-size: 70px;
+}
+.contenedor3{
+    color: rgb(0, 0, 0);
+    margin-top: 150px;
+    margin-left: 100px;
+    color: white;
+    height: 10px;
+}
+.foto2{ 
+    padding: 10px; 
+    margin: 10px; 
+    border: 2px solid black; 
+    float: right; 
+    width: 400px; 
+    margin-right: 100px;
+    margin-top: -170px;
+}
+.contenedor4{
+    margin-top: 500px;
+    background-color: white;
+    border-bottom: solid rgb(0, 0, 0);
+    color: black;
+}
+img{
+    padding: 10px; 
+    margin: 10px; 
+    border: 2px solid black; 
+    width: 250px; 
+}
+iframe{
+    width: 100%;
+}
+.pasadias{
+    height: 50px;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    background-color: white;
+}
+button{
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 300px;
+    background-color: teal;
+    
+}
+footer{
+    font-size: 15px;
+}
+a:hover{
+    background-color: rgb(0, 0, 0);
+    transform: .3s;
+    border-radius: 10px;
+    padding:10px;
+}
+@media(max-width: 1000px){
+    nav ul li{
+    display: block;
+    margin-left: 20x;}
+
+nav #check{
+    display:  none;
+}
+nav ul{
+    float: left;
+    margin-top: 60px;
+    background-color: rgb(13, 157, 157);
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    margin-left: -100%;
+    transition: all ease .5s;
+} 
+nav label .fa-solid{
+    display: block;
+    margin-right: 20px; 
+    cursor: pointer;
+}
+.parrafo{
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+    left: 20%;
+}
+.titulo{
+    font-size: 50px;
+}
+.contenedor3{
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.foto2{ 
+    display: none;
+}
+.imagen{
+    height: 50px;
+    border: 0;
+    padding: 0;
+    margin: 2px -20px  ;
+    width: 70px;
+}
+.fondo{
+    background-image: url(imagenes/2.jpg);
+    border-bottom: solid rgb(0, 0, 0);
+    height: 30% ;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#check:checked ~ ul{
+    margin-left: 0px;
+    transition: all ease .5s;
+}
+}
+@keyframes logo{
+    from{width: 0;
+    color: rgb(0, 0, 0);}
+}
